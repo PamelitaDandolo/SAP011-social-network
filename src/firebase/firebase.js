@@ -5,6 +5,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+
   // onAuthStateChanged, avisa o status do usuário (online ou não)
 
 } from 'firebase/auth';
@@ -21,7 +22,6 @@ export function registerEmail(email, password) {
 
 // função login
 export function login(email, password) {
-  console.log(email, password);
   const auth = getAuth(app);
   return signInWithEmailAndPassword(auth, email, password);
 }
