@@ -1,6 +1,7 @@
-import { lerPosts, createPost } from '../../firebase/firestore.js';
+import { lerPosts, createPost, editPost, deletePost   } from '../../firebase/firestore.js';
 import editbutton from '../../img/editbutton.png';
 import favoritebutton from '../../img/favorite.png';
+import deletebutton from '../../img/delete.png';
 import { exit } from '../../firebase/firebase.js';
 
 export default () => {
@@ -32,6 +33,7 @@ maxlength="200" rows=5 cols=20>
 <i class="material-icons custom-icon like" id="like">
 <a href="/#feed">favorite</a></i> <!-- Ícone de like do post -->
 <p>
+
 <section id ='posts'></section>
       `;
 
@@ -45,18 +47,21 @@ maxlength="200" rows=5 cols=20>
   function exibirPost(posts) {
     const postsExibir = container.querySelector('#posts');
     postsExibir.innerHTML = ' '; // limpa a tela e começa a colocar os posts em tela
-    console.log('limpei os posts');
     posts.forEach((element) => {
       const containerPosts = `
       <label id="container-posts"></label>
       <textarea id="container-posts" minlength="20" maxlength="200" rows=5 cols=20 readonly>${element.textoDoPost}</textarea>
-      <img id="edit-btn" alt="botão editar" src="${editbutton}"/>
-      <img id="favorite-btn" alt="curtida coração" src="${favoritebutton}"/>
+      <img id="edit-btn" alt="botão editar" src="${editbutton}" data-postid="${element.idPost}"/>
+      <img id="favorite-btn" alt="curtida coração" src="${favoritebutton}" data-postid="${element.idPost}"/>
+      <img id="delete-btn" alt="apagar postagem" class="delete-btn" src="${deletebutton}" data-postid="${element.idPost}" />
       `;
       postsExibir.innerHTML += containerPosts;
-      console.log('desenhando novos posts')
     });
   }
+
+   const postDelete =  container.querySelector('#delete-btn').addEventListener('click', () =>{
+    deletePost(postDelete);
+    });
 
   lerPosts(exibirPost);
 
@@ -65,16 +70,18 @@ maxlength="200" rows=5 cols=20>
   exitBtn.addEventListener('click', exit);
 
   // editPost
-  // const buttonEdit = container.querySelector('#edit-btn').addEventListener('click', () => {
-  //     if (buttonEdit) {
-  //       // botão clicado, linkar com qual caixa de texto? a externa ou a interna?
-  //       // pego o texto a ser editado pelo id?
-  //     } else if {
-  //       // alerta de alteração com sucesso 
-  //     } else {
-  //       // aviso de erro ao armazenar alteração
-  //     }
-  //   });
+  const buttonEdit = container.querySelector('#edit-btn').addEventListener('click', () => {
+      editPost.then(() =>) {
+
+      }
+        // botão clicado, linkar com qual caixa de texto? a externa ou a interna?
+        // pego o texto a ser editado pelo id?
+      
+      .catch{
+        // alerta de alteração não realizada 
+      }
+      
+    };
 
   return container;
 };
