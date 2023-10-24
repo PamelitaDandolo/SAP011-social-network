@@ -52,10 +52,6 @@ a {
 }
 
 .like {
-    color: #efd8c0;
-}
-
-.like:active {
     color: black;
 }
 
@@ -103,9 +99,6 @@ a {
 button {
     margin: 10px;
 }
-
-
-
 
 
 

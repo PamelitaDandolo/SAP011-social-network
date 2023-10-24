@@ -55,3 +55,13 @@ export async function createPost(textPost) {
 // deletePost
 
 // Add a new document with a generated id.
+
+ /*export function favoritebutton(userId, newText, dataPost) {
+  const (doc(db, 'posts', userId), {
+    dataDoPost: dataPost,
+    textoDoPost: newText,
+    idUser: userId,
+
+  });
+}
+/* 

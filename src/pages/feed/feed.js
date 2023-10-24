@@ -87,3 +87,23 @@ maxlength="200" rows=5 cols=20>
 
 // printar o post em tela
 // firebase lê o banco de dados e armazena na array, depois printa
+
+
+  
+  // const buttonEdit = container.querySelector('#edit-btn').addEventListener('click', () => { // chamar a função do firestore de edição
+  //     if (buttonEdit) {
+  //       // botão clicado, linkar com qual caixa de texto? a externa ou a interna?
+  //       // pego o texto a ser editado pelo id?
+  //     } else if {
+  //       // alerta de alteração com sucesso 
+  //     } else {
+  //       // aviso de erro ao armazenar alteração
+  //     }
+  //   });
+
+  /*
+   const favoritebutton = container.querySelector('#favorite-btn').addEventListener('click', () => {
+   likePost(favoritebutton);
+   });
+/*
+  
