@@ -10,21 +10,19 @@ export default () => {
   <img class="logo-header" id="logotipo" src=${logotipo} alt="Mulher segurando um prato com alimentos">
 </header>
 <br>
+<br>
 <section class="center-content"> <!-- Usar a classe para centralizar o conteúdo -->
   <form id="email"> 
     <label>Email: </label>
     <input type="email" id="email-login" placeholder=" seu@email.com" name="email"/>
   </form>
   <br>
+  <br>
   <form id="email-password">
     <label>Senha: </label>
     <input type="password" id="password-login" placeholder=" digite a senha" name="senha"/>
   </form>
   <br>
-  ou
-  <form>
-    <button id="google-button">Botão do Google</button>
-  </form>
   <br>
   <form id="register-login">
     <button id="register-btn">Cadastrar</button>

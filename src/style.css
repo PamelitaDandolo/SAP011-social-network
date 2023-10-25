@@ -90,6 +90,7 @@ a {
 }
 
 #email-login {
+    justify-content: center;
     height: 30px;
     background-color: #efd8c0;
     border-radius: 50px;
