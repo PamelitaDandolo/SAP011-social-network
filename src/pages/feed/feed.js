@@ -14,7 +14,8 @@ export default () => {
 <a href="/#home">home</a></i> <!-- Ícone da página cadastrar-->
 <i class="material-icons custom-icon">
 <a href="/#about">favorite</a></i> <!-- Ícone para ir ao about-->
-<i class="material-icons custom-icon" onclick="irParaExit()">exit_to_app</i> <!-- Ícone para ir ao login -->
+<i class="material-icons custom-icon">
+onclick="irParaExit()">exit_to_app</i> <!-- Ícone para ir ao login -->
 </head>
 <p>
 <button id="about-btn" type="submit">Sobre</button> 
@@ -53,11 +54,14 @@ maxlength="200" rows=5 cols=20>
       <img id="edit-btn" alt="botão editar" src="${editbutton}"/>
       <img id="favorite-btn" alt="curtida coração" src="${favoritebutton}"/>
       `;
+
       postsExibir.innerHTML += containerPosts;
       container.querySelector('#favorite-btn').addEventListener('click', (event) => {
-        console.log(event.target.dataset)
-    //      likePost(likePost);
+        console.log(event.target.dataset.postid)
+        likePost(likePost);
           });
+
+          
       console.log('desenhando novos posts')
     });
   }
