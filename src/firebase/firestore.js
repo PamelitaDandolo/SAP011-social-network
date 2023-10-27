@@ -12,29 +12,26 @@ import { db } from './config.js';
 
 // exibPost
 export function lerPosts(exibirPosts) {
-// console.log('lendo posts');
   const q = query(collection(db, 'posts'), orderBy('data', 'asc')); // ordenar exibição de posts
 
   // onSnapshot atualiza em tempo real
   onSnapshot(q, (querySnapshot) => {
     const posts = [];
     querySnapshot.forEach((document) => { // pega cada um dos documentos que está em nárnia
-      const obj = {
+      const userObj = {
         dataDoPost: document.data().data,
         textoDoPost: document.data().text,
-        idUser: document.id, // sequência de números e letras lá na collection que identifica o post
+        idPost: document.id, // sequência de números e letras lá na collection que identifica o post
       };
-      posts.push(obj);
+      posts.push(userObj);
     });
-    // console.log('Posts', posts.join(''));
-    console.log('esta somando?', posts);
     // são os posts que vieram de narnia e foram jogados numa array que está dentro da const linha 9
     exibirPosts(posts); // essa função exibe o post na tela, criar no feedjs
   });
 }
 
+// createPost
 export async function createPost(textPost) {
-  console.log(textPost);
   await addDoc(collection(db, 'posts'), {
     data: new Date(), // pega a data atual
     text: textPost,
@@ -42,23 +39,24 @@ export async function createPost(textPost) {
   });
 }
 
-export function likePost(postId) {
-  updateDoc (doc(db, 'posts', postId), {
-   like: 1,
- });
+// likePost
+export function likePost(idPost) {
+  updateDoc(doc(db, 'posts', idPost), {
+    like: 1,
+  });
 }
+
 // editPost
-// export async function editPost(userId, newText, dataPost) {
-//   await updateDoc(doc(db, 'posts', userId), {
-//     dataDoPost: dataPost,
-//     textoDoPost: newText,
-//     idUser: userId,
-//   });
-// }
+export async function editPost(idPost, newText) {
+  console.log(idPost, newText);
+  await updateDoc(doc(db, 'posts', idPost), {
+    text: newText,
+  });
+}
 
-// createPost
-
-
-// deletePost
-
-// Add a new document with a generated id.
+// deletePosts
+export async function deletePost(idPost) {
+  await deleteDoc(doc(db, 'posts', idPost), {
+    idPost: idPost,
+});
+}

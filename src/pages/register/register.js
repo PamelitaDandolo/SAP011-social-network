@@ -8,22 +8,18 @@ export default () => {
   <section id='containers-login'>
   <h1>Cadastro</h1>
       <form id="name-cadastro">
-        <label>Nome:</label>
         <input type="texto" id ="cadastro-name" placeholder="Digite seu nome..." name="nome"/>
       </form>
 
       <form id="cadastro-email"> 
-        <label>Email</label>
         <input type= "email" id="email-id" placeholder="seu@email.com" name="email"/>
       </form>
 
       <form id="cadastro-password">
-        <label>Senha:</label>
         <input type="password" id="password-id" placeholder= "Crie sua senha..." name="senha"/>
       </form>
 
       <form id="password-confirm">
-        <label>Confirmação:</label>
         <input type="password" id="confirm-password" placeholder= "Confirme sua senha..." name="confirmação-senha"/>
       </form>
     
