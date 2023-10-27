@@ -6,6 +6,7 @@ import {
   addDoc,
   doc,
   updateDoc,
+  deleteDoc,
 } from 'firebase/firestore';
 // collection são o conjunto de post lá em narnia
 import { db } from './config.js';
@@ -21,6 +22,7 @@ export function lerPosts(exibirPosts) {
       const userObj = {
         dataDoPost: document.data().data,
         textoDoPost: document.data().text,
+        likeDoPost: document.data().like,
         idPost: document.id, // sequência de números e letras lá na collection que identifica o post
       };
       posts.push(userObj);
@@ -31,6 +33,7 @@ export function lerPosts(exibirPosts) {
 }
 
 // createPost
+// createPost
 export async function createPost(textPost) {
   await addDoc(collection(db, 'posts'), {
     data: new Date(), // pega a data atual
@@ -39,6 +42,11 @@ export async function createPost(textPost) {
   });
 }
 
+// likePost
+export function likePost(postId, quantidadeLikes) {
+  updateDoc(doc(db, 'posts', postId), {
+    like: quantidadeLikes,
+  });
 // likePost
 export function likePost(idPost) {
   updateDoc(doc(db, 'posts', idPost), {
@@ -53,7 +61,17 @@ export async function editPost(idPost, newText) {
     text: newText,
   });
 }
+export async function editPost(idPost, newText) {
+  console.log(idPost, newText);
+  await updateDoc(doc(db, 'posts', idPost), {
+    text: newText,
+  });
+}
 
+// deletePosts
+export async function deletePost(idPost) {
+  await deleteDoc(doc(db, 'posts', idPost));
+}
 // deletePosts
 export async function deletePost(idPost) {
   await deleteDoc(doc(db, 'posts', idPost), {
