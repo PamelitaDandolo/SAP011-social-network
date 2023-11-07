@@ -13,6 +13,7 @@
 * [7.Tecnologias e ferramentas utilizadas](#8-tecnologias-e-ferramentas-utilizadas)
 * [8.Melhorias futuras](#9-melhorias-futuras)
 * [9.Créditos](#10-creditos)
+<br><br>
 
   
 ## 1. Prefácio ✨ 
@@ -21,6 +22,7 @@ web mobile first. Nosso foco é simples, porém significativo. Permitimos
 que você se conecte, compartilhe e interaja. Cadastre-se com facilidade,
 publique na timeline, interaja com outras histórias e crie conexões
 autênticas.
+<br><br>
 
 
 ## 2. Resumo do Projeto 📝
@@ -32,16 +34,29 @@ feito por mulheres. Alcançar um público mais amplo
 e fortalecer o crescimento dos negócios locais. Unindo forças,
 essa rede possibilita a conexão e colaboração entre mulheres
 empreendedoras, incentivando o apoio mútuo e o empoderamento.
+<br><br>
 
 
 ## 3. História de Usuários ⌨️
 - História de Usuário 1: "Como cliente, recebemos uma solicitação para ajustar a tonalidade do botão, tornando-a um verde mais escuro" <p>Aplicação Realizada: Para atender a essa solicitação, modificamos a cor do botão, escolhendo um tom de verde mais escuro que harmonizasse com a nossa paleta de cores. Isso resultou em uma aparência mais equilibrada na página inicial.</p>
 - História de usuário 2: "Login com Facebook. Hoje só uso Facebook pra logar em outros apps pq nem sempre quero conectar meu e-mail principal"<p> Aplicação Futura: Para atender a essa necessidade, estamos planejando implementar a opção de login com o Facebook, proporcionando aos nossos usuários uma alternativa prática para acessar a plataforma. Além disso, estamos explorando a possibilidade de adicionar suporte para o login com o Google, visando maior flexibilidade na autenticação.</p>
-- História de usuário 3: "Acho que poderiam pensar em fechar parcerias com alguns restaurantes e fornecer desconto ou algum tipo de benefício aos usuários, algo que também incentive que eles conhecem de fato o estabelecimento" <p>Aplicação Futura: Estamos considerando a implementação dessa ideia no futuro, visando a criação de um recurso que permita aos usuários receber descontos exclusivos (valores estipulados por cada restaurante) em sua primeira visita a estabelecimentos mencionados e avaliados em nossa plataforma. Isso não apenas incentivaria a descoberta de novos lugares, mas também proporcionaria benefícios aos nossos usuários. </p>
-  
-## 4. Protótipo 🎨
+- História de usuário 3: "Acho que poderiam pensar em fechar parcerias com alguns restaurantes e fornecer desconto ou algum tipo de benefício aos usuários, algo que também incentive que eles conhecem de fato o estabelecimento" <p>Melhorias Futuras: Estamos considerando a implementação dessa ideia no futuro, visando a criação de um recurso que permita aos usuários receber descontos exclusivos (valores estipulados por cada restaurante) em sua primeira visita a estabelecimentos mencionados e avaliados em nossa plataforma. Isso não apenas incentivaria a descoberta de novos lugares, mas também proporcionaria benefícios aos nossos usuários. </p>
+<br><br>
 
+## 4. Protótipos 🎨
+<br>
 
+![Protótipo de Baixa Definição](src/img/baixa-prototipo.jpg)
+* ### Protótipo de Baixa Resolução
+<br><br>
+
+![Protótipo Mobile](src/img/prototipo-mobile.jpg)
+* ### Visualização do Protótipo no Mobile
+<br><br>
+
+![Pantone das Cores](src/img/pantone-redesocial.png)
+* ### Paleta de Cores
+<br><br>
 
 ## 5. Objetivos de Aprendizagem 🗂
 * HTML Semântico
@@ -50,6 +65,8 @@ empreendedoras, incentivando o apoio mútuo e o empoderamento.
 * Javascript
 * Controle de Versões (Git e GitHub)
 * UI UX Firebase FireStore
+<br><br>
+
 
 ## 6. Critérios de Pronto ✔
 * Ser uma SPA
@@ -58,6 +75,7 @@ empreendedoras, incentivando o apoio mútuo e o empoderamento.
 * Fazer testes manuais buscando erros e imperfeições simples
 * Fazer testes de usabilidade e incorporar o feedback dos usuários como melhorias
 * Fazer deploy do aplicativo e marcar a versão (git tag)
+<br><br>
 
 ## 7. Tecnologias e ferramentas utilizadas 🔨
 * Visual Studio Code
@@ -71,16 +89,19 @@ empreendedoras, incentivando o apoio mútuo e o empoderamento.
 * Vite
 * Canva
 * Trello
+<br><br>
 
 ## 8. Melhorias futuras 🚀
 * Fazer com que o nome do usuário apareça nas postagens 
 * Botão Vinculado ao Google esteja em funcionamento para Autenticação
 * Fazer a função de "Esquecer Senha"
 * Testes Unitários
+<br><br>
 
 ## 9. Créditos 🔗
 * [Google Fonts](https://fonts.google.com/icons)
 * [Canva](https://www.canva.com/)
+<br><br>
 
 Ícones: 
 
@@ -89,9 +110,11 @@ empreendedoras, incentivando o apoio mútuo e o empoderamento.
 * [Editar](https://fonts.google.com/icons?icon.query=edit&selected=Material+Symbols+Outlined:edit:FILL@0;wght@400;GRAD@0;opsz@24)
 * [Delete](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:delete:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=delete)
 * [Sair](https://fonts.google.com/icons?icon.query=logout&selected=Material+Symbols+Outlined:logout:FILL@0;wght@400;GRAD@0;opsz@24)
+<br><br>
 
 Fontes:
 * [Chonburi](https://fonts.google.com/specimen/Chonburi)
+<br><br>
   
 ## Desenvolvedoras 🤝 ❤️
 * Aline  [Github](https://github.com/aliun1) [Linkedin](https://www.linkedin.com/in/alinejvieira/)
