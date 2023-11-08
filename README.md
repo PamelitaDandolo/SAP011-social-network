@@ -120,3 +120,7 @@ Fontes:
 * Aline  [Github](https://github.com/aliun1) [Linkedin](https://www.linkedin.com/in/alinejvieira/)
 * Alycia [Github](https://github.com/alycia00) [Linkedin](https://www.linkedin.com/in/alyciag2004/)
 * Pamela [Github](https://github.com/PamelitaDandolo) [Linkedin](https://www.linkedin.com/in/pameladandolo/)
+
+  ## Acesse ao projeto pronto!
+
+* [RestauranteDelas](https://rede-social-25fa5.web.app/)
