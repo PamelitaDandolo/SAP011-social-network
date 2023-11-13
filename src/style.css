@@ -47,7 +47,7 @@
         border-radius: 50px;
         text-align: center;
         color: #9b4922;
-        font-size: 30px;
+        font-size: 20px;
         justify-content: center;
     }
 
@@ -85,7 +85,7 @@
         border-radius: 25px;
         text-align: center;
         color: #9b4922;
-        font-size: 30px;
+        font-size: 20px;
         font-style: oblique;
     }
 
@@ -108,15 +108,12 @@
         color: #f8d2ae;
     }
 
-    html {
-        scroll-behavior: smooth;
-    }
+
     
     body {
         background-color: #9b4922;
         display: flex;
         justify-content: center;
-        align-items: center, flex-start;
     }
     
     
@@ -145,10 +142,37 @@
         color: black;
     }
 
-
-    
     button {
         margin: 20px;
     }
-  
+
+    textarea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efd8c0;
+        border-radius: 20px;
+        text-align: center;
+        
+        padding: 5px;
+    }
+    #email-element{
+        color: #efd8c0;
+    }
+
+  #post-btn{
+    background-color: #efd8c0;
+    color: #4b1f0b;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-left: 2px;
+  }
+
+  #new-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

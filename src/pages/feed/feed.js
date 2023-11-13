@@ -27,11 +27,12 @@ export default () => {
       <img class="logout" src="${logout}" id="exit-btn" type="submit"/>
   </section>     
 </header>
-
+<body id="new-post">
 <textarea id="new-post-txt" placeholder="Digite seu post aqui..." minlength="20"
 maxlength="200" rows=5 cols=20></textarea>
-
 <button id="post-btn" type="submit">Compartilhar</button>
+</body>
+
 <section id ='posts'>
 </section>
       `;
@@ -51,7 +52,7 @@ maxlength="200" rows=5 cols=20></textarea>
       const postTemplate = document.createElement('div');
       const containerPosts = `
       <label id="label-posts-${id}"></label>
-      <span>${element.userEmail}</span>
+      <span id='email-element'>${element.userEmail}</span>
       <textarea id="container-posts-${id}" minlength="20" maxlength="200" rows=5 cols=20 readonly>${element.textoDoPost}</textarea>
       <span>${element.likeDoPost}</span><img class="btn-favorite-all" id="favorite-btn-${id}" alt="curtida coração" src="${favoritebutton}" data-postid="${element.idPost}"/>
       ${element.uid === getAuth(app).currentUser.uid ?
