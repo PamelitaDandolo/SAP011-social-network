@@ -32,6 +32,7 @@ export default () => {
 maxlength="200" rows=5 cols=20></textarea>
 
 <button id="post-btn" type="submit">Compartilhar</button>
+
 <section id ='posts'>
 </section>
       `;
@@ -49,10 +50,12 @@ maxlength="200" rows=5 cols=20></textarea>
     postsExibir.innerHTML = ' '; // limpa a tela e começa a colocar os posts em tela
     posts.forEach((element) => {
       const postTemplate = document.createElement('div');
+      postTemplate.className = 'container-post';
       const containerPosts = `
       <label id="label-posts-${id}"></label>
       <span>${element.userEmail}</span>
       <textarea id="container-posts-${id}" minlength="20" maxlength="200" rows=5 cols=20 readonly>${element.textoDoPost}</textarea>
+      <div>
       <span>${element.likeDoPost}</span><img class="btn-favorite-all" id="favorite-btn-${id}" alt="curtida coração" src="${favoritebutton}" data-postid="${element.idPost}"/>
       ${element.uid === getAuth(app).currentUser.uid ?
     `
@@ -60,6 +63,7 @@ maxlength="200" rows=5 cols=20></textarea>
       <img class="btn-save-all" id="save-edit-btn-${id}" alt="salvar edição post" src="${savepostbutton}" data-postid="${element.idPost}"/>
       <img class="btn-delete-all" id="delete-btn-${id}" alt="apagar postagem" class="delete-btn" src="${deletebutton}" data-postid="${element.idPost}"/>
       ` : ''}
+      </div>
       `;
       // operador ternario
       postTemplate.innerHTML = containerPosts;

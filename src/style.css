@@ -109,6 +109,22 @@
         color: #f8d2ae;
     }
 
+    #menu {
+        font-size: 40px;
+    }
+
+    /* caixa onde escreve o post */
+    #new-post-txt {
+          
+        width: 70%;
+        height: 60%;
+    }
+    .container-post {
+        display: flex;
+        flex-direction: column;
+
+    }
+  
     html {
         scroll-behavior: smooth;
     }
