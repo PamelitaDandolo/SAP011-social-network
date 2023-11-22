@@ -3,7 +3,7 @@
     font-family: "Chonburi";
 }
 
-
+/* responsividade */
 @media screen and (min-width:300px) and (max-width: 2000px) {
 
     .logo-header{
@@ -15,6 +15,7 @@
         align-items: center;
         text-align: center;
     }
+
     /* botoes: */
     #register-btn {
         width: 90px;
@@ -47,7 +48,7 @@
         border-radius: 50px;
         text-align: center;
         color: #9b4922;
-        font-size: 30px;
+        font-size: 20px;
         justify-content: center;
     }
 
