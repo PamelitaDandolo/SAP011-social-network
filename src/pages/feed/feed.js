@@ -62,6 +62,7 @@ maxlength="200" rows=5 cols=20></textarea>
       <img class="btn-edit-all" id="edit-btn-${id}" alt="botão editar" src="${editbutton}" data-postid="${element.idPost}"/>
       <img class="btn-save-all" id="save-edit-btn-${id}" alt="salvar edição post" src="${savepostbutton}" data-postid="${element.idPost}"/>
       <img class="btn-delete-all" id="delete-btn-${id}" alt="apagar postagem" class="delete-btn" src="${deletebutton}" data-postid="${element.idPost}"/>
+
       ` : ''}
       </div>
       `;
